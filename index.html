@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkIndexSession()">
+    <div class="page d-flex">
+        <div class="scroller"></div>
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <h1 class="p-relative">Home</h1>
+            <div class="wrapper d-grid gap-20">
+                <div class="p-20 bg-white">
+                    <h2>Teams</h2>
+                    <i id="teamsToggle" class="up fa-solid fa-arrow-up"></i>
+                    <i id="teamsToggleHidden" class="hidden down fa-solid fa-arrow-down"></i>
+                    <ol id="teamsList" type="1">
+                        <li>
+                            Details about top teams in europe and their important moments.
+                        </li>
+                        <li>
+                            Details about their legends in all time.
+                        </li>
+                        <li>
+                            Best Records for those teams.
+                        </li>
+                    </ol>
+                </div>
+                <div class="p-20 bg-white">
+                    <h2>Players</h2>
+                    <i id="playersToggle" class="up fa-solid fa-arrow-up"></i>
+                    <i id="playersToggleHidden" class="hidden down fa-solid fa-arrow-down"></i>
+                    <ol id="playersList" type="1">
+                        <li>
+                            Player history in clubs.
+                        </li>
+                        <li>
+                            Player appearences, goals and assists.
+                        </li>
+                        <li>
+                            player's trophies with club and national team.
+                        </li>
+                    </ol>
+                </div>
+                <div class="records p-20 bg-white">
+                    <h2>Records</h2>
+                    <i id="recordsToggle" class="up fa-solid fa-arrow-up"></i>
+                    <i id="recordsToggleHidden" class="hidden down fa-solid fa-arrow-down"></i>
+                    <ol id="recordsList" type="1">
+                        <li>
+                            Providing best players records in football
+                        </li>
+                        <li>
+                            Providing Team Records that difficult to be broken
+                        </li>
+                        <li>
+                            Most unbeleivable records.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+                <section class="History" id="History">
+                    <h2 class="title">History</h2>
+                    
+                    <div class="content-card">
+                        <div class="History-card" >
+                        <div class="History-image" >
+                            <img src= "imgs/world cup.jpg" alt="HistoryOfFootball">
+                        </div>
+                        <div class="History-info">
+                            <strong class="History-title">           
+                                         <a href="History.html" target="_parent" class="more-details"> History Of Football </a>
+    
+                    </strong>                
+                    </div>
+                    </div>
+        
+                    <div class="History-card" >
+                        <div class="History-image" >
+                            <img src= "imgs/champions.jpg" alt="TopClubs">
+                        </div>
+                        <div class="History-info">
+                            <strong class="History-title">
+                                <a href="teams.html" target="_parent" class="more-details">Top Football Clubs</a>
+                            </strong>                
+                    </div>
+                    </div>
+                </div>
+                </section>
+    
+                <footer class="footer">
+                        <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+                </footer>
+    
+            
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

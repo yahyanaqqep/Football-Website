@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkSession()">
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <div class="profile-page m-20 ">
+                <h1 class="p-relative">Liverpool</h1>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Mohammed Salah</h1>
+                    <p>Mohamed Salah is one of the world's best and most prolific forwards and a serial winner with Liverpool FC since arriving at Anfield in the summer of 2017.
+
+                        The Egyptian has been an unstoppable scorer following his transfer from AS Roma and has collected medals in the Premier League, Champions League, FIFA Club World Cup, Emirates FA Cup, UEFA Super Cup, Carabao Cup and FA Community Shield.
+                        
+                        He passed the 250-appearance and 150-goal marks – and entered the top 10 of the club's all-time leading scorers list – during a 2021-22 season in which he lifted the FA Cup and Carabao Cup, and helped his team reach the third Champions League final of his Liverpool career and finish second in the Premier League.
+                        
+                        
+                        He won both the PFA Players' Player of the Year and Football Writers' Association Footballer of the Year awards for the second time after also doing so in 2017-18, a third Premier League Golden Boot and his first Premier League Playmaker of the Season prize.
+                        
+                        Salah's stellar consistency in terms of availability and performance saw him score 44 times for the Reds in 2017-18, 27 in 2018-19, 23 in 2019-20 and 31 in both 2020-21 and 2021-22.  
+                        
+                        In 2022-23, Salah overtook Robbie Fowler to become the club's all-time top Premier League goalscorer, and only four men have ever netted more for the Reds in all competitions.
+                        
+                        An astonishing repertoire of goals has ranged from jaw-dropping individual efforts – including a Premier League Goal of the Season winner against Manchester City – to sublime long-rangers, to close-range tap-ins and ice-cool penalties, such as his opener versus Tottenham Hotspur in the 2019 Champions League final.
+                        
+                        Mohamed Salah: Liverpool's Egyptian King.<br>
+                <strong>HONOURS (                   
+                    English Premier League (1) -
+                    FA Cup (1) -
+                    English Premier League Cup (1) -
+                    Champions League (1) -
+                    European Super (1) -
+                    Club World Cup (1) -
+                    FA Shield (1) )</strong>
+                        </div>
+
+                         <img src="imgs/Mosalah.jpg" alt="MO Salah">
+            </p>
+
+            </section>
+
+            <section class="players-card">
+                <div class="text">
+                    <h1> Ian Rush</h1>
+                    <p>
+                        The Welsh winger was the fan's favourite and set a record at Liverpool that will take a while to beat. With predictory instincts that were unmatched in the league during his time, he scored a record-breaking 346 goals in 660 games.
+                        Rush made his international début, in May 1980, just before he officially became a Liverpool player. His Liverpool début came on 13 December that year in a First Division fixture at Portman Road against Ipswich Town. He was standing in for his future strike-partner, Kenny Dalglish (out with an ankle injury but at the time one of the most highly rated strikers in the world), and wore his No 7 shirt. At this stage, Liverpool were defending the league title and also contending for the European Cup, while Ipswich were emerging as surprise title contenders. Liverpool finished fifth (with Aston Villa winning the title), but they did win the European Cup (for the third time) and the League Cup (for the first time)
+<br>
+                        <strong>HONOURS (English Premier League (5) -
+                            FA Cup (3) -
+                            League Cup (5) -
+                            Football Super Cup (1) -
+                            Charity Shield (3) -
+                            European Cup (2))</strong>
+                    </div>
+
+                         <img src="imgs/Ian Rush.png" alt="Ian Rush">
+            </p>
+
+            </section>
+            
+            
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>Steven Gerrard  </h1>
+                    <p>
+                        Steven George Gerrard MBE (born 30 May 1980) is an English professional football manager and former player who is the current manager of Saudi Pro League club Al-Ettifaq. Described by pundits and fellow professionals as one of his generation's greatest players, as well as one of the greatest midfielders of all time, Gerrard spent the vast majority of his playing career as a central midfielder for Liverpool and the England national team, captaining both.
+
+Born in Merseyside, Gerrard played for Liverpool from 1998 to 2015, winning nine trophies, including the UEFA Champions League, two FA Cups and three League Cups. He was Man of the Match in the 2005 UEFA Champions League final, in which Liverpool overturned a 3–0 deficit to defeat AC Milan on penalties, and the 2006 FA Cup final, which has been termed The Gerrard Final in homage to his performance. Despite success in cup competitions, he never won the Premier League. During his career, Gerrard was thrice selected in the FIFA FIFPRO Men's World 11. Gerrard won 114 England caps between 2000 and 2014, captaining the team 38 times and scoring 21 goals. He played at three UEFA European Championships, in 2000, 2004 and 2012 (where he was named in the Team of the Tournament) and three FIFA World Cups, in 2006, 2010 and 2014.
+                        <br>
+                        <strong>HONOURS ( English Cup (2) -
+                            English League (3) -
+                            FA Shield (2) -
+                            Champions League (1) -
+                            European League (1) -
+                            European League Cup (2))</strong>
+                    </div>
+
+                         <img src="imgs/Steven Gerrard.png" alt="Steven Gerrard ">
+            </p>
+
+            </section>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Fernando Torres</h1>
+                    <p>
+                        Fernando José Torres Sanz (Spanish pronunciation: [feɾˈnando ˈtores]; born 20 March 1984) is a Spanish football manager and former player who played as a striker. He is the current manager of Atlético Madrid Juvenil A. Due to his consistent goalscoring rate as a young player, Torres came to be nicknamed El Niño ('The Kid'), which stuck with him throughout his career.[5] In his prime, he was praised for his pace, accurate finishing, and proficiency in heading, and was named in the FIFA World XI twice.
+
+Torres started his career with Atlético Madrid, progressing through their youth system to the first-team squad. He made his first-team debut in 2001 and finished his time at the club with 75 goals in 174 La Liga appearances. Torres joined Premier League club Liverpool in 2007, after signing for a club record transfer fee. The most prolific goalscoring spell of his career, he became the fastest player in Liverpool history to score 50 league goals and was often regarded as one of the best strikers in the world.[6] In 2008, he finished third for both the Ballon d'Or and FIFA World Player of the Year.
+                        <br>
+                        <strong>HONOURS ( FA Cup (1) -
+                            Champions League (1) -
+                            Europa League (1) -
+                            Runner-up in the Club World Cup in 2012 -
+                            English Premier League (3))</strong>
+                    </div>
+
+                         <img src="imgs/Fernando Torres.jpg" alt="Fernando Torres">
+            </p>
+
+            </section>
+            
+       
+            <section class="players-card">
+                <div class="text">
+                    <h1>Sadio Mané </h1>
+                    <p>
+                        Sadio Mané (born 10 April 1992) is a Senegalese professional footballer who plays as a forward or winger for Saudi Pro League club Al Nassr and the Senegal national team. Widely regarded as one of the greatest African players of all time, he is known for his pressing, dribbling, and speed.[5][note 1]
+
+                        Mané began his professional career with Ligue 2 club Metz at the age of 19, but he departed after a solitary season to join Austrian club Red Bull Salzburg in 2012 for a fee of €4 million, winning a league and cup domestic double in the 2013–14 season. Later that summer, Mané transferred to English club Southampton for a club record fee of £11.8 million. There, he set a new Premier League record for the fastest hat-trick, scored in 176 seconds in a 6–1 win over Aston Villa in 2015.
+
+                        <br>
+                        <strong>HONOURS ( 
+                           English Premier League (1) -
+League Cup (1) -
+FA cup (1) -
+Champions League (1) -
+European Cup (1) -
+clubs World Cup (1)
+                            )</strong>
+                    </div>
+
+                         <img src="imgs/Sadio Mané.png" alt="Sadio Mané">
+            </p>
+
+            </section>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+            <footer class="footer">
+                <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+        </footer>
+       
+        </div>
+
+
+        
+            
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>

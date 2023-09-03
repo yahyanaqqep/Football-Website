@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkSession()">
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <div class="profile-page m-20 ">
+                <h1 class="p-relative">Barcelona</h1>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Lionel Messi</h1>
+                    Honours with FC Barcelona <br>
+                    3 FIFA Club World Cups -
+                    4 UEFA Champions League - 
+                    3 UEFA Super Cups -
+                    10 Spanish leagues -  
+                    7 Copas del Rey -
+                    8 Spanish Super Cups -
+                    4 Catalan Cup -
+                    2 Catalan Supercup 
+                    <br> 
+                    Honours with Argentina <br>
+                    1 Olympic gold -
+                    1 Copa América 
+                    <br>
+                    Individual awards <br>
+                    1 Laureus -
+                    1 FIFA World Player -
+                    1 The Best FIFA Football Award -
+                    2 UEFA Player of the Year -
+                    1 World Soccer Award Best Player -
+                    6 Ballons d'Or -
+                    4 Golden XI -
+                    6 Golden Shoe -
+                    8 La Liga top scorer -
+                    6 Top scorer UEFA Champions League -
+                    9 MVP LaLiga -
+                    1 Golden Boy -
+                    1 Bravo Trophy 
+                    <br>
+                    Most important individual records <br>
+                    Only player to win Ballon d’Or, FIFA World Player, La Liga top scorer and Golden Shoe in same season (2009/10)
+                    Player with most Ballons d'Or 
+                    Player with most Golden Shoes
+                    Player with most Pichichi Trophies
+                    Top goalscorer in a season in official competition (73 goals in 2011/12)
+                    Top goalscorer in calendar year (91 goals in 2012)
+                    Top goalscorer at one club Club (672 goals)
+                    Longest scoring streak in La Liga (33 goals in 21 consecutive matches 2012/13)
+                    Player with most matches  for Argentina
+                    All time top goalscorer in La Liga (474 goals in 520 matches)
+                    Top goalscorer in a single La Liga season (50 goals in 2011/12)
+                    Player with most hat-tricks in La Liga (36)
+                    Player with most goals form a free kick in La Liga (39 goals)
+                    Player with most wins in official competition (542 wins in 771 matches)<br>
+                        </div>
+
+                         <img src="imgs/FC-Barcelona-Lionel-Messi-PNG-Photo.png" alt="Lionel Messi">
+            </p>
+
+            </section>
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>Carles Puyol</h1>
+                    <p>Carles Puyol carried out his entire professional career at Barça but his beginnings were with his local side La Pobla de Segur. In his early years he showed great promise and in 1995 when he was 17 he joined the FC Barcelona youth system and moved into La Masia. He very quickly became a regular at the back for Barça B and on 2 October 1999 he made his long awaited debut for the first team.
+
+                        Puyol had to wait until the season 2004/05 to win his first major trophy with the balugranes. He was the club captain and a key member of Frank Rijkaard’s side that claimed the league title that season, Puyol holding aloft the trophy in front of the Camp Nou crowd. Success continued as the following season with Barça retaining their league title and claiming the Champions League title in Paris. During Josep Guardiola’s time as coach Puyol continued to play a vital role in the Barça back four before injury finally caught up with him in his final two campaigns as a player. When he finally decided to hang up his boots, only Xavi Hernández had played more games for the Club in official competition.
+                        <br>
+                        <strong>HONOURS (2 World Club Cups -
+                            3 Champions League -
+                            2 European Super Cups -
+                            6 League trophies -
+                            2 Spanish Cups -
+                            6 Spanish Super Cups -
+                            6 Catalan Cups )</strong>
+                    </div>
+
+                         <img src="imgs/carles-puyol-1.png" alt="Carles Puyol">
+            </p>
+
+            </section>
+            
+            
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>Andrés Iniesta </h1>
+                    <p>
+                        A creative midfielder of extraordinary footballing quality, Iniesta stood out for his pure talent and his intelligence. Small in stature and elusive, his incredible skills on the ball made him a vital part of the blaugrana system. It is not for nothing that he is considered one of the greatest Spanish players of all time.
+
+                        Iniesta future as a player was forever linked to that glorious period in which Barça won trophy after trophy whilst at the same time dazzling the fans with the football they played under Frank Rijkaard, Pep Guardiola, Tito Vilanova, Luis Enrique and Ernesto Valverde. It was a remarkable time for the blaugranes with the calming presence of Iniesta in the midfield a vital part of that success. His last minute equaliser against Chelsea at Stamford Bridge that gave Barça a place in the 2009 Champions League final will forever form part of the Club’s history.
+                        
+                        He left the Club on a high having completed the league and Copa del Rey double in the 2017/18 season. In his time at Barça Andrés Iniesta claimed no less than 32 trophies as a blaugrana and the man from Fuentealbilla will always have a place in the heart of every Barça fan. As the former Spain national team coach Vicente del Bosque said, “Iniesta will always be an example of how to play and how to behave as a professional.”
+                        <br>
+                        <strong>HONOURS ( 
+                            3 World Club Cups -
+                            4 Champions League -
+                            3 European Super Cups -
+                            9 Leagues -
+                            6 Copas del Rey -
+                            7 Spanish Super Cups -
+                            5 Copas Catalunya -
+                            2 Catalan Super Cups)</strong>
+                    </div>
+
+                         <img src="imgs/Andrés Iniesta.png" alt="Andrés Iniesta">
+            </p>
+
+            </section>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Xavi Hernández </h1>
+                    <p>
+                        Xavi (Terrassa, Barcelona, 1980) is, statistically speaking, the most successful player in Spanish football history. A midfielder from the club’s youth system, he’s the perfect example of the Barça values. The conductor of the FC Barcelona orchestra reads the game to absolute perfection. He always seemed to pick out the best-positioned players and had an uncanny knack for creating time and space.
+
+His mentor was Pep Guardiola and he’ would go on to become the midfield general’s successor. Xavi was astonishingly creative and was the veritable brain in the Barça engine. Though not physically strong, he used his wily knowledge to outwit opponents time and time again. There was no safer guarantee in the middle of the park than this exquisite player.
+
+He made his first team debut in 1998 under Louis van Gaal, and held onto his first team place for a remarkable seventeen seasons. It was under Frank Rijkaard in 2003 that he really started making his name, and by the time he was playing under his role model Pep Guardiola in the 2008/09 season, his legend was already set in stone. in his final season as a blaugrana. following the retirement of Carles Puyol, he became Barça captain. 
+
+He left Barça in 2015 with full honours, having broken the club record for first team appearances and won more titles than any other Spaniard before him. Xavi will always be part of the FC Barcelona heritage.
+
+                        <br>
+                        <strong>HONOURS ( 
+                            2 FIFA Club World Cups -
+                            4 Champions League -
+                            2 European Supercups -
+                            8 Leagues -
+                            3 Copas del Rey -
+                            6 Spanish Supercups -
+                            6 Copas Catalunya -
+                            1 Catalan Supercup )</strong>
+                    </div>
+
+                         <img src="imgs/Xavi Hernández.jpg" alt="Xavi Hernández">
+            </p>
+
+            </section>
+            
+       
+            <section class="players-card">
+                <div class="text">
+                    <h1>Daniel Alves  </h1>
+                    <p>
+                        After five successful seasons with Sevilla, Dani Alves came to FC Barcelona in the summer of 2008. His physical strength earned him the nickname The Tarantula in his native Brazil and he was soon the indisputable first choice at right back for the blaugranes. In his eight seasons in a Barça shirt he made 414 appearance, 391 of which came in official competition, for an average of 49 games a season. With his solidity in defence, his rampaging runs down the flank, and his potent shot from outside the box, he was a vital component for four different blaugrana coaches: Pep Guardiola, Tito Vilanova, Tata Martino and Luis Enrique. Furthermore, his commitment to the team and his extrovert personality made him a firm favourite with the Barça fans and one of the stars when it came to celebrating the team’s many successes.
+
+                        In the summer of 2016, Dani Alves would finally leave the club. He would pass through Juventus, PSG and Sao Paulo before returning to wear Blaugrana in January 2022. At the age of 38, Alves returned to Barça to put himself under the orders of Xavi Hernández and be part of the good second half of the season of the culer team.
+                        
+                        At the time of his departure in the summer of 2022, Dani Alves was second on Barça's all-time appearance list for foreign players, behind none other than Leo Messi. Also, he is one of the players with the most trophies. Football fans will never forget his raids down the right hand side in tandem with Messi, wreaking havoc on opposing defences.
+                        
+                        
+                         
+                        <br>
+                        <strong>HONOURS ( 
+                            3 Club World Cups -
+                        3 Champions Leagues -
+                        3 European Super Cups -
+                        6 Leagues -
+                        4 Copas del Rey -
+                        4 Spanish Super Cups -
+                        2 Copas Catalunya -
+                        1 Catalan Super Cup )</strong>
+                    </div>
+
+                         <img src="imgs/Daniel Alves.png" alt="Daniel Alves">
+            </p>
+
+            </section>
+       
+       
+       
+       
+            <footer class="footer">
+                <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+        </footer>
+       
+       
+       
+       
+       
+       
+        </div>
+
+
+        
+            
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>

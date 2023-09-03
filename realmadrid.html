@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkSession()">
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <div class="profile-page m-20 ">
+                <h1 class="p-relative">Real Madrid</h1>
+            <section class="players-card">
+                <div class="text">
+                    <h1>CRISTIANO RONALDO</h1>
+                    <p>Cristiano Ronaldo is a part of Real Madrid's legacy and will forever be remember as one of the great icons throughout the club's history.
+                        
+                        He was unveiled at the Santiago Bernabéu on 6 July 2009, where he was joined by Eusebio and Alfredo Di Stéfano, and since that day, the goals just kept coming.
+                        He netted 451 times in 438 competitive appearances with Real Madrid (averaging over a goal a game).
+                        He registered in all of the competitions he featured in: 312 in LaLiga, 105 in the Champions League, 22 in the Copa del Rey,
+                        six in the Club World Cup, four in the Spanish Super Cup and two in the UEFA Super Cup.
+
+                        Nobody throughout the club's history has scored as many goals as the Portuguese attacker,
+                        who boasts an impressive trophy haul as a Real Madrid player: four Champions League crowns,
+                        three Club World Cups and UEFA Super Cups apiece, two LaLiga titles, a pair of Copas del Rey and two Spanish Super Cups. 
+                        This list of honours is completed with four Ballons d'Or, three Golden Shoe awards, two The Best awards,
+                         whilst he was named UEFA Best Player in Europe three times and landed the Pichichi crown on three occasions.
+                <br>
+                <strong>HONOURS (                    4 European Cups -
+                    3 Club World Cups -
+                    3 UEFA Super Cups -
+                    2 LaLiga titles -
+                    2 Copas del Rey -
+                    2 Spanish Super Cups )</strong>
+                        </div>
+
+                         <img src="imgs/CRISTIANO RONALDO.png" alt="CRISTIANORONALDO">
+            </p>
+
+            </section>
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>SERGIO RAMOS</h1>
+                    <p>
+                        A true madridista legend, Sergio Ramos is one of the greatest players in our club's history. 
+                        The hero of La Décima with his unforgettable 93rd-minute goal in Lisbon, he captained the team to lift La Duodécima and La Decimotercera.
+                        Four European Cups take pride of place in a trophy haul of 22 titles, including 4 Club World Cups, 3 European Super Cups,
+                        5 LaLiga titles, 2 Copas del Rey and 4 Spanish Super Cups. On the 8th of September 2005, at 19 years of age, 
+                        he was presented at the Santiago Bernabéu alongside Florentino Pérez and Alfredo Di Stéfano. Two days later, 
+                        he made his debut against Celta. From then on, over the course of 16 seasons with the team, he made 671 appearances,
+                        making him the club's fourth-highest all-time appearance maker. He also found the net an incredible 101 times,
+                        a truly amazing figure for a defender. Beyond his impressive numbers, he'll long hold a place in madridista hearts thanks to his big performances on historic nights.
+                        On an individual note, Ramos has been named in the FIFA FIFPro World 11, some 11 times (2008, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019 and 2020). He won the Golden Ball at the 2014 Club World Cup, he's been named the best defender in the Champions League twice (2017 and 2018), and was Man of the Match in the 2016 Champions League final and the European Sup Cup the same year.
+<br>
+                        <strong>HONOURS (4 Champions Leagues -    4 Club World Cups -    3 European Super Cups -   5 LaLiga titles -    2 Copas del Rey -    4 Spanish Super Cups -    1 World Cup with Spain -    2 European Championships with Spain)</strong>
+                    </div>
+
+                         <img src="imgs/SERGIO RAMOS.png" alt="SERGIO RAMOS">
+            </p>
+
+            </section>
+            
+            
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>RAÚL GONZÁLEZ </h1>
+                    <p>
+                        A Real Madrid symbol. The eternal captain who represented Madrid’s values on the pitch. Raul was a forward with an almost infinite instinct. He was an example for everyone, putting in the maximum effort in every game, irrespective of the opponent. He would give it his all, having an insatiable appetite, something that was evident with each action. He was always alert for rebounds. An excellent role-model for anyone who has ever dreamt of being a footballer.
+
+                        On 29 October 1994 Raúl lived his first great moment with the Whites’ shirt. The forward made his debut at La Romareda Stadium. A week later he played his first derby against Atlético Madrid at the Bernabéu. He scored his first goal with a spectacular left-foot shot from the edge of the area. It went into the top corner, and contributed to his team’s victory (4-2), who went on to win La Liga title that season.
+                         
+                        Acclaimed in Spain, he conquered Europe. He played his first Champions League game at the age of 18. On 20 May 1998 he was in the team that won the club’s Seventh European Cup title beating Juventus Turin in the final. He repeated the experience in May of 2000 and 2002, scoring in both finals. He is one of the few players to have earned 100 caps with the Spanish national team. 
+    <br>
+                        <strong>HONOURS ( 3 European Cup -
+                        2 Intercontinental Cup-
+                        1 European Super Cup-
+                        6 La Liga-
+                        4 Spanish Super Cup)</strong>
+                    </div>
+
+                         <img src="imgs/RAÚL GONZÁLEZ.jpg" alt="RAÚL GONZÁLEZ">
+            </p>
+
+            </section>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Karim Benzema </h1>
+                    <p>
+                        Karim Benzema has left his mark on Real Madrid. Over the course of his fourteen seasons in the first team, he has become one of the best players in our history and the star of a period full of success. His tally of 354 goals in 648 games places him second on the list of Real Madrid top scorers.
+
+                        Since his arrival in 2009, Benzema has won 25 titles, equaling Marcelo as the most successful Real Madrid player in club history. His honors list includes 5 Champions Leagues, 5 Club World Cups, 4 European Super Cups, 4 LaLiga titles, 3 Copas del Rey and 4 Spanish Super Cups.
+                        
+                        Madridistas enjoyed his goals and his football, with a special mention for his fantastic 2021/22 season, in which he scored 44 goals and was the top scorer in the Champions League and LaLiga. Figures which, together with his key role on the road to the Decimocuarta, earned him the 2022 Ballon d'Or and the UEFA Player of the Year award.
+                        
+                        One of the goalscorers in the Final of the Decimotercera, Benzema has left an indelible mark with his quality and magic on the pitch. He also won the Nations League with the French national team in 2021.
+
+                        <br>
+                        <strong>HONOURS ( 5 Champions Leagues -
+                            5 Club World Cups - 
+                            4 European Super Cups -
+                            4 League Cups -
+                            3 King's Cups -
+                            4 Spanish Super Cups)</strong>
+                    </div>
+
+                         <img src="imgs/Karim Benzema.png" alt="Karim Benzema">
+            </p>
+
+            </section>
+            
+       
+            <section class="players-card">
+                <div class="text">
+                    <h1>ROBERTO CARLOS </h1>
+                    <p>
+                        His left foot was essential in Real Madrid’s conquest of more than ten titles. The Brazilian ace will always be remembered for his friendly nature, regularity, prodigious speed (he ran 100 metres in 10.9 seconds) and his tremendous power (his shots reached a speed of 140 km/h).
+
+His dream of being a footballer started to become a reality in 1986. Roberto Carlos joined União São João, where he matured as a footballer, excelling at all levels. In 1992, at the age of only 19, he was already an acclaimed footballer in his country. Palmeiras did not take long in signing him, and there he formed an unequalled left wing with Rivaldo, whom he would face many years later.
+
+After winning two league titles in Brazil he signed with Inter Milan in 1995, and a year later he transferred to Real Madrid. The integration of Roberto Carlos within the team was very successful. He played 11 seasons with the Whites, winning many major trophies, in particular three European Cup titles.
+
+In 2007 he left Madrid after contributing in another La Liga title. It would be the last contribution of one of the best left-footers to have ever graced the Santiago Bernabéu Stadium. He holds the Whites all-time record for most number of games by a foreigner.
+
+                        <br>
+                        <strong>HONOURS ( 
+                            3 European Cup -
+                            2 Intercontinental Cup -
+                            1 European Super Cup -
+                            4 La Liga -
+                            3 Spanish Super Cup
+                            )</strong>
+                    </div>
+
+                         <img src="imgs/ROBERTO CARLOS.png" alt="ROBERTO CARLOS">
+            </p>
+
+            </section>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+            <footer class="footer">
+                <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+        </footer>
+       
+        </div>
+
+
+        
+            
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>

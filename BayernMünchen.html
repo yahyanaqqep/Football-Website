@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkSession()">
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <div class="profile-page m-20 ">
+                <h1 class="p-relative">Bayern München </h1>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Robert Lewandowski</h1>
+                    <p>Robert Lewandowski (Polish pronunciation: [ˈrɔbɛrt lɛvanˈdɔfskʲi]i; born 21 August 1988) is a Polish professional footballer who plays as a striker for La Liga club Barcelona and captains the Poland national team. Recognised for his positioning, technique and finishing, Lewandowski is regarded as one of the best strikers of all time, as well as one of the most successful players in Bundesliga and Bayern Munich history. He has scored over 600 senior career goals for club and country.
+
+                        After being the top scorer in the third and second tiers of Polish football with Znicz Pruszków, Lewandowski moved to top-flight Lech Poznań, helping the team win the 2009–10 Ekstraklasa. In 2010, he transferred to Borussia Dortmund, where he won honors including two consecutive Bundesliga titles and the league's top goalscorer award. In 2013, he also featured with Dortmund in the 2013 UEFA Champions League Final. Prior to the start of the 2014–15 season, Lewandowski agreed to join Dortmund's domestic rivals, Bayern Munich, on a free transfer. 
+                        <br>
+                <strong>HONOURS (   Bundesliga (8) -
+                    German Cup (3) -
+                    German Super Cup (5) -
+                    UEFA Champions League  (1) -
+                    European Super Cup (1) -
+                    Club World Cup (1)  )</strong>
+                        </div>
+
+                         <img src="imgs/Robert Lewandowski.png" alt="Robert Lewandowski">
+            </p>
+
+            </section>
+
+            <section class="players-card">
+                <div class="text">
+                    <h1> Philipp Lahm</h1>
+                    <p>
+                        Philipp Lahm (German pronunciation: [ˈfɪlɪp ˈlaːm]; born 11 November 1983) is a German former professional footballer who played as a full-back. Considered by many to be one of the greatest full-backs of all time, Lahm was the longtime captain of Bayern Munich, having led them to numerous honours including the 2013 UEFA Champions League as part of the Treble. He is also a former captain of his national team, which he led to win the 2014 FIFA World Cup, before retiring from international football.[2][7]
+
+                        Lahm was included in the World Cup team of the tournament in 2006, 2010, and 2014, and the UEFA Team of the Tournament in 2008 and 2012 and in the UEFA Team of the Year 2006, 2008, 2012, 2013 and 2014.
+<br>
+                        <strong>HONOURS (Bundesliga (8) -
+                            German Cup (6) -
+                            German Football League - Ligabokal (1) -
+                            German Super Cup (3) -
+                            UEFA Champions League (1) -
+                            European Super Cup (1) -
+                            Club World Cup (1) )</strong>
+                    </div>
+
+                         <img src="imgs/Philipp Lahm.png" alt="Philipp Lahm">
+            </p>
+
+            </section>
+            
+            
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>Thomas Müller </h1>
+                    <p>
+                        Thomas Müller (German pronunciation: [ˈtoːmas ˈmʏlɐ]; born 13 September 1989) is a German professional footballer who plays for Bundesliga club Bayern Munich and the Germany national team. He has been deployed in a variety of attacking roles – as an attacking midfielder, second striker, centre forward, and on either wing.[4][5][6] He has been praised for his positioning, teamwork, stamina, and work-rate, and has shown consistency in both scoring and creating goals.[7]
+
+                        A product of Bayern's youth system, Müller has represented the club ever since. With Bayern he has won a record twelve Bundesliga titles, six DFB-Pokals, eight DFL-Supercups, two UEFA Champions League titles, two UEFA Super Cups and two FIFA Club World Cups. He made his first-team breakthrough in the 2009–10 season after Louis van Gaal was appointed as the main coach; he played almost every game as the club won the league and cup double and reached the Champions League final. Müller scored 23 goals in the 2012–13 season as Bayern won a historic treble; the league title, cup and Champions League. He broke the Bundesliga record for assists by providing 21 in a season (a record in the top five leagues jointly held with Lionel Messi in La Liga) and scored 14 goals as Bayern won a second treble in the 2019–20 season.                        <br>
+                        <strong>HONOURS (Bundesliga (12) -
+                            German Cup (6) -
+                            German Super Cup (8) -
+                            UEFA Champions League (2) -
+                            European Super Cup: (2) -
+                            Club World Cup (2) ))</strong>
+                    </div>
+
+                         <img src="imgs/Thomas Müller.png" alt="Thomas Müller ">
+            </p>
+
+            </section>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Arjen Robben </h1>
+                    <p>
+                        Arjen Robben (Dutch pronunciation: [ˈɑrjən ˈrɔbə(n)]i; born 23 January 1984[citation needed]) is a Dutch former professional footballer who played as a winger. Known for his dribbling skills, speed, ball control and long-range shots, Robben is widely regarded as one of the greatest wingers and players of his generation.[4][5][6]
+
+Robben first came to prominence with Groningen, for whom he was player of the year for the 2000–01 Eredivisie season. Two years later he signed for PSV, where he became the Netherlands' Young Player of the Year and won an Eredivisie title.[7] The following season Robben's signature was pursued by leading clubs, and after protracted transfer negotiations, he joined Chelsea in 2004. Robben's Chelsea debut was delayed through injury, but upon returning to fitness, he helped Chelsea bring home two consecutive Premier League titles, and was the Premier League Player of the Month in November 2004. After a third season in England which was punctuated by injury, Robben signed for Real Madrid in a transfer worth €35 million.                        <br>
+                        <strong>HONOURS (German League (8) -
+                            German Cup (5) -
+                            German Super Cup (2) -
+                            UEFA Champions League (1) -
+                            European Super Cup (1) )</strong>
+                    </div>
+
+                         <img src="imgs/Arjen Robben.png" alt="Arjen Robben">
+            </p>
+
+            </section>
+            
+       
+            <section class="players-card">
+                <div class="text">
+                    <h1>Franck Ribéry </h1>
+                    <p>
+                        Franck Henry Pierre Ribéry (French pronunciation: ​[fʁɑ̃k ʁibeʁi]; born 7 April 1983) is a French former professional footballer who primarily played as a winger, preferably on the left side, and was known for his pace, energy, skill, and precise passing.[2] Ribéry has been described as a player who is fast, tricky and an excellent dribbler, who has great control with the ball at his feet.[3] While with Bayern, he was recognised on the world stage as one of the best players of his generation. The previous talisman of the French national team, Zinedine Zidane, once referred to Ribéry as the "jewel of French football".[4]
+
+Ribéry's career began in 1989 as a youth player for local hometown club FC Conti Boulogne. He left the club after seven years to join professional outfit Lille, but departed the club after three years after having difficulties adjusting. In 1999, Ribéry joined US Boulogne, where he played for two years. After spending two more years in the amateur divisions with two clubs (Alès and Brest), Ribéry earned a move to Ligue 1 club Metz in 2004. After six months with the club, Ribéry moved to Turkey in January 2005 to join Galatasaray, where he won the Turkish Cup. 
+                        <br>
+                        <strong>HONOURS ( Bundesliga (9) -
+                            German Cup (6) -
+                            German League - Ligabokal (1) -
+                            German Super Cup (4) -
+                            UEFA Champions League (1) -
+                            European Super Cup (1) -
+                            Club World Cup (1) 
+                            )</strong>
+                    </div>
+
+                         <img src="imgs/Franck Ribéry.png" alt="Franck Ribéry">
+            </p>
+
+            </section>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+            <footer class="footer">
+                <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+        </footer>
+       
+        </div>
+
+
+        
+            
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>

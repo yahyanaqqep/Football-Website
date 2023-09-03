@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkAdmin()">
+    <div class="page d-flex">
+        <div class="scroller"></div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <h1 class="p-relative">Edit User</h1>
+            <div class="wrapper d-grid gap-20">
+                <div class="p-20 bg-white">
+                    <h2>Edit User</h2>
+                    <i id="teamsToggle" class="up fa-solid fa-arrow-up"></i>
+                    <i id="teamsToggleHidden" class="hidden down fa-solid fa-arrow-down"></i>
+                    <ol id="teamsList" type="1">
+                    <form action="adminIndex.html" onsubmit="editUser()" id="editUsrForm">
+                        <div><input type="text"  id="usr" placeholder="Username"></div>
+                        <div><input type="text" id="editUsrMail" hidden placeholder="Email"></div>
+                        <div><input type="text" id="editUsrPssd" hidden placeholder="Password"></div>
+                        <div><input type="submit" id="editUsrSubmit" hidden></div>
+                    </form>
+                    <li>
+                        <div><button onclick="searchUser()">Find User</button></div>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+                <footer class="footer">
+                        <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+                </footer>
+    
+            
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

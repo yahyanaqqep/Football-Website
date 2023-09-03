@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkSession()">
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <h1 class="p-relative">La liga</h1>
+            <section class="container">
+
+            
+                <div class="box-container">
+            
+                    <div class="box">
+                        <img src="imgs/Realmadrid.png" alt="Real Madrid">
+                        <a href="realmadrid.html" class="btn">Real Madrid</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/Barca.png" alt="Barcelona">
+                        
+                        <a href="Barcelona.html" class="btn">Barcelona</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/Atletico_Madrid_2017_logo.svg.webp" alt="Atletico Madrid">
+                        <a href="#" class="btn">Atletico Madrid</a>
+                    </div>
+            
+                </div>
+            
+            </section>
+            <h1 class="p-relative">premier League</h1>
+            <section class="container">
+
+            
+                <div class="box-container">
+            
+                    <div class="box">
+                        <img src="imgs/Liverpool-emblem.png" alt="Liverpool">
+                        <a href="Liverpool.html" class="btn">Liverpool</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/Manchester-United-logo.png" alt="Manchester United ">
+                        
+                        <a href="#" class="btn">Manchester United </a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/manchester-city-fc-logo-free-vector.jpg" alt="Manchester City ">
+                        <a href="#" class="btn">Manchester City </a>
+                    </div>
+
+                    <div class="box">
+                        <img src="imgs/chelsea-fc.svg" alt="chelsea ">
+                        <a href="#" class="btn">Chelsea </a>
+                    </div>
+
+                    <div class="box">
+                        <img src="imgs/tottenham.png" alt="tottenham  ">
+                        <a href="#" class="btn">tottenham </a>
+                    </div>
+
+                    <div class="box">
+                        <img src="imgs/Arsenal_FC.svg.png    " alt="Arsenal ">
+                        <a href="#" class="btn">Arsenal</a>
+                    </div>
+                </div>
+                
+            </section>
+        
+            <h1 class="p-relative">Serie A</h1>
+            <section class="container">
+
+            
+                <div class="box-container">
+            
+                    <div class="box">
+                        <img src="imgs/ac-milan-logo-0.png" alt="AC Milan">
+                        <a href="ACMilan.html" class="btn">AC Milan</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/juv.png" alt="Juventus ">
+                        
+                        <a href="#" class="btn">Juventus  </a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/inter-milan-logo.png" alt="Inter Milan ">
+                        <a href="#" class="btn">Inter Milan</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="imgs/napoli.png" alt="Napoli ">
+                        <a href="#" class="btn">Napoli </a>
+                    </div>
+
+                    <div class="box">
+                        <img src="imgs/as-roma-logo-0.png" alt="Roma  ">
+                        <a href="#" class="btn">Roma </a>
+                    </div>
+
+                    
+                </div>
+                
+            </section>
+            
+
+            <h1 class="p-relative">Ligue 1</h1>
+            <section class="container">
+
+            
+                <div class="box-container">
+            
+                    <div class="box">
+                        <img src="imgs/PSG.png" alt="Paris Saint-Germain">
+                        <a href="PSG.html" class="btn">Paris Saint-Germain</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/olympique-de-marseille-0.png" alt="Olympique de Marseille ">
+                        
+                        <a href="#" class="btn">Olympique de Marseille  </a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/lyon-logo-0.png" alt="Olympique Lyonnais ">
+                        <a href="#" class="btn">Olympique Lyonnais</a>
+                    </div>
+                    
+                </div>
+                
+            </section>
+            
+
+            
+            <h1 class="p-relative">Bundesliga</h1>
+            <section class="container">
+
+            
+                <div class="box-container">
+            
+                    <div class="box">
+                        <img src="imgs/bayern-munich.png" alt="Bayern_München">
+                        <a href="BayernMünchen.html" class="btn">Bayern München</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/Borussia_Dortmund_logo.png" alt="Borussia_Dortmund ">
+                        
+                        <a href="#" class="btn">Borussia Dortmund</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imgs/borussia-monchengladbach-logo-0.png" alt="borussia-monchengladbach ">
+                        <a href="#" class="btn">Borussia Monchengladbach</a>
+                    </div>
+                    
+                </div>
+                
+            </section>
+            <footer class="footer">
+                <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+        </footer>
+
+        </div>
+
+         
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

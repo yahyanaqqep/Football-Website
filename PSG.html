@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkSession()">
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <div class="profile-page m-20 ">
+                <h1 class="p-relative">PSG</h1>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Zlatan Ibrahimović</h1>
+                    <p>Zlatan Ibrahimović (Swedish pronunciation: [ˈslǎːtan ɪbraˈhǐːmʊvɪtɕ], Bosnian pronunciation: [zlǎtan ibraxǐːmoʋitɕ]; born 3 October 1981) is a Swedish former professional footballer who played as a striker. Ibrahimović is renowned for his acrobatic strikes and volleys, powerful long-range shots, and excellent technique and ball control. He is regarded as one of the greatest strikers of all time and is one of the most decorated footballers in the world, having won 34 trophies in his career. He has scored over 570 career goals, including more than 500 club goals, and has scored in each of the last four decades.                        .<br>
+                <strong>HONOURS (                   
+                    French League (4) -
+French Cup (2) -
+French League Cup (3) -
+Champions Cup (1) )</strong>
+                        </div>
+
+                         <img src="imgs/Zlatan Ibrahimović.png" alt="Zlatan Ibrahimović">
+            </p>
+
+            </section>
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>Thiago Silva</h1>
+                    <p>
+                        Thiago Emiliano da Silva (born 22 September 1984) is a Brazilian professional footballer who plays as a centre-back for Premier League club Chelsea and the Brazil national team. Widely regarded as one of the best defenders of his generation, he is known for his defensive prowess, discipline, and leadership.
+
+Silva began his senior club career in 2002 playing as a midfielder for RS Futebol, and transitioned to a defensive position while at Juventude; he then signed with Porto in 2004, at age 19, and moved to Dynamo Moscow on loan, where he was hospitalized with a near fatal bout of tuberculosis. After recovering, he joined Fluminense and won a Copa do Brasil. In 2009, Silva moved to AC Milan for a reported fee of €8 million and won a Serie A title.                        <strong>HONOURS (Italian League (1) -
+    <strong>HONOURS (                   
+    French League 1 (7) -
+    French Cup (5) -
+    League Cup (5) -
+    Champions Cup (5) -
+    UEFA Champions League runner-up (1))</strong>
+                    </div>
+
+                         <img src="imgs/Thiago Silva.png" alt="Thiago Silva">
+            </p>
+
+            </section>
+            
+            
+
+            <section class="players-card">
+                <div class="text">
+                    <h1>Kylian Mbappé  </h1>
+                    <p>
+                        Kylian Mbappé Lottin (born 20 December 1998) is a French professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the France national team. Regarded as one of the best players in the world, he is renowned for his dribbling abilities, exceptional speed, and finishing.
+
+                        Born in Paris and raised in nearby Bondy, Mbappé began his senior club career in 2015 with Monaco, where he won the Ligue 1 title in the 2016–17 season. In 2017, aged 18, Mbappé signed for Paris Saint-Germain on an eventual permanent transfer worth €180 million, making him the second-most-expensive player and most expensive teenage player of all time.[4] With PSG, he has won five Ligue 1 titles and three Coupes de France, including a domestic quadruple in the 2019–20 season, while also leading the club to its first ever UEFA Champions League final in 2020. He is the club's all-time top goalscorer and ranks third of all time in assists.  
+                         <br>
+                        <strong>HONOURS (French League 1 (5) -
+                            French Cup (3) -
+                            Runner-up (1) -
+                            French League Cup (2) -
+                            Champions Cup (2) -
+                            UEFA Champions League Runner-up (1))</strong>
+                    </div>
+
+                         <img src="imgs/Kylian Mbappé.png" alt="Kylian Mbappé ">
+            </p>
+
+            </section>
+            <section class="players-card">
+                <div class="text">
+                    <h1>Edinson Cavani</h1>
+                    <p>
+                        Edinson Roberto Cavani Gómez (Spanish pronunciation: [ˈeðinsoŋ kaˈβani]; born 14 February 1987) is an Uruguayan professional footballer who plays as a striker for Argentine Primera División club Boca Juniors and the Uruguay national team. He is nicknamed El Matador ("The Killer") or Cazador ("Hunter") for his clinical finishing as well as his celebration, in which he makes a gesture resembling a bow and arrow. Cavani is considered one of the best strikers of his generation and one of Uruguay's greatest players.
+
+                        Cavani began his career playing for Danubio in Montevideo, where he played for two years, before moving to Italian side Palermo in 2007. In 2010, Cavani signed for Napoli, who signed him on an initial loan deal before buying him for a total fee of €17 million. He helped them win the Coppa Italia in 2012 and established himself as the most dominant striker in Serie A.[4] In mid-2013, Cavani joined Paris Saint-Germain in France for a reported €64 million, at the time the most expensive signing in French football history. With PSG, Cavani won six Ligue 1 titles, five Coupes de la Ligue and four Coupes de France.                                               <br>
+                        <strong>HONOURS (French League (6) -
+                            French Cup (5) -
+                            League Cup (5) -
+                            Champions Cup (4) -
+                            UEFA Champions League Runner-up (1) )</strong>
+                    </div>
+
+                         <img src="imgs/Edinson Cavani.png" alt="Edinson Cavani">
+            </p>
+
+            </section>
+            
+       
+            <section class="players-card">
+                <div class="text">
+                    <h1>Ronaldinho </h1>
+                    <p>
+                        Ronaldo de Assis Moreira (born 21 March 1980), commonly known as Ronaldinho Gaúcho (Brazilian Portuguese: [ʁonawˈdʒĩɲu ɡaˈuʃu]) or simply Ronaldinho,[note 1] is a Brazilian retired professional footballer who played mostly as an attacking midfielder, but was also deployed as a winger. Widely regarded as one of the greatest players of all time, he won two FIFA World Player of the Year awards and a Ballon d'Or. He is the only player ever to have won a World Cup, a Copa América, a Confederations Cup, a Champions League, a Copa Libertadores and a Ballon d'Or.[4] A global icon of the sport, Ronaldinho was renowned for his technical skills, creativity, dribbling ability and accuracy from free-kicks, his use of tricks, feints, no-look passes and overhead kicks, as well as his ability to score and create goals, all prominent characteristics of his early-age background playing futsal. He is known by the nickname "O Bruxo" ("The Wizard")
+                                               <br>
+                        <strong>HONOURS ( 
+                            UEFA Intertoto Cup (1)
+                            )</strong>
+                    </div>
+
+                         <img src="imgs/Ronaldinho.png" alt="Ronaldinho">
+            </p>
+
+            </section>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+            <footer class="footer">
+                <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+        </footer>
+       
+        </div>
+
+
+        
+            
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="checkSession()">
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Football</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li hidden id="lout">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="#" onclick="logOut()">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li id="listLogin">
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="login.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="teams.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="players.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="trophies.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Trophies</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="History.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type a Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head -->
+            <h1 class="p-relative">Players</h1>
+            <div class="profile-page m-20 ">
+            
+                <h1 class="p-relative">Liverpool</h1>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Mohammed Salah</h1>
+                        <p>Mohamed Salah is one of the world's best and most prolific forwards and a serial winner with Liverpool FC since arriving at Anfield in the summer of 2017.
+    
+                            The Egyptian has been an unstoppable scorer following his transfer from AS Roma and has collected medals in the Premier League, Champions League, FIFA Club World Cup, Emirates FA Cup, UEFA Super Cup, Carabao Cup and FA Community Shield.
+                            
+                            He passed the 250-appearance and 150-goal marks – and entered the top 10 of the club's all-time leading scorers list – during a 2021-22 season in which he lifted the FA Cup and Carabao Cup, and helped his team reach the third Champions League final of his Liverpool career and finish second in the Premier League.
+                            
+                            
+                            He won both the PFA Players' Player of the Year and Football Writers' Association Footballer of the Year awards for the second time after also doing so in 2017-18, a third Premier League Golden Boot and his first Premier League Playmaker of the Season prize.
+                            
+                            Salah's stellar consistency in terms of availability and performance saw him score 44 times for the Reds in 2017-18, 27 in 2018-19, 23 in 2019-20 and 31 in both 2020-21 and 2021-22.  
+                            
+                            In 2022-23, Salah overtook Robbie Fowler to become the club's all-time top Premier League goalscorer, and only four men have ever netted more for the Reds in all competitions.
+                            
+                            An astonishing repertoire of goals has ranged from jaw-dropping individual efforts – including a Premier League Goal of the Season winner against Manchester City – to sublime long-rangers, to close-range tap-ins and ice-cool penalties, such as his opener versus Tottenham Hotspur in the 2019 Champions League final.
+                            
+                            Mohamed Salah: Liverpool's Egyptian King.<br>
+                    <strong>HONOURS (                   
+                        English Premier League (1) -
+                        FA Cup (1) -
+                        English Premier League Cup (1) -
+                        Champions League (1) -
+                        European Super (1) -
+                        Club World Cup (1) -
+                        FA Shield (1) )</strong>
+                            </div>
+    
+                             <img src="imgs/Mosalah.jpg" alt="MO Salah">
+                </p>
+    
+                </section>
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1> Ian Rush</h1>
+                        <p>
+                            The Welsh winger was the fan's favourite and set a record at Liverpool that will take a while to beat. With predictory instincts that were unmatched in the league during his time, he scored a record-breaking 346 goals in 660 games.
+                            Rush made his international début, in May 1980, just before he officially became a Liverpool player. His Liverpool début came on 13 December that year in a First Division fixture at Portman Road against Ipswich Town. He was standing in for his future strike-partner, Kenny Dalglish (out with an ankle injury but at the time one of the most highly rated strikers in the world), and wore his No 7 shirt. At this stage, Liverpool were defending the league title and also contending for the European Cup, while Ipswich were emerging as surprise title contenders. Liverpool finished fifth (with Aston Villa winning the title), but they did win the European Cup (for the third time) and the League Cup (for the first time)
+    <br>
+                            <strong>HONOURS (English Premier League (5) -
+                                FA Cup (3) -
+                                League Cup (5) -
+                                Football Super Cup (1) -
+                                Charity Shield (3) -
+                                European Cup (2))</strong>
+                        </div>
+    
+                             <img src="imgs/Ian Rush.png" alt="Ian Rush">
+                </p>
+    
+                </section>
+                
+                
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Steven Gerrard  </h1>
+                        <p>
+                            Steven George Gerrard MBE (born 30 May 1980) is an English professional football manager and former player who is the current manager of Saudi Pro League club Al-Ettifaq. Described by pundits and fellow professionals as one of his generation's greatest players, as well as one of the greatest midfielders of all time, Gerrard spent the vast majority of his playing career as a central midfielder for Liverpool and the England national team, captaining both.
+    
+    Born in Merseyside, Gerrard played for Liverpool from 1998 to 2015, winning nine trophies, including the UEFA Champions League, two FA Cups and three League Cups. He was Man of the Match in the 2005 UEFA Champions League final, in which Liverpool overturned a 3–0 deficit to defeat AC Milan on penalties, and the 2006 FA Cup final, which has been termed The Gerrard Final in homage to his performance. Despite success in cup competitions, he never won the Premier League. During his career, Gerrard was thrice selected in the FIFA FIFPRO Men's World 11. Gerrard won 114 England caps between 2000 and 2014, captaining the team 38 times and scoring 21 goals. He played at three UEFA European Championships, in 2000, 2004 and 2012 (where he was named in the Team of the Tournament) and three FIFA World Cups, in 2006, 2010 and 2014.
+                            <br>
+                            <strong>HONOURS ( English Cup (2) -
+                                English League (3) -
+                                FA Shield (2) -
+                                Champions League (1) -
+                                European League (1) -
+                                European League Cup (2))</strong>
+                        </div>
+    
+                             <img src="imgs/Steven Gerrard.png" alt="Steven Gerrard ">
+                </p>
+    
+                </section>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Fernando Torres</h1>
+                        <p>
+                            Fernando José Torres Sanz (Spanish pronunciation: [feɾˈnando ˈtores]; born 20 March 1984) is a Spanish football manager and former player who played as a striker. He is the current manager of Atlético Madrid Juvenil A. Due to his consistent goalscoring rate as a young player, Torres came to be nicknamed El Niño ('The Kid'), which stuck with him throughout his career.[5] In his prime, he was praised for his pace, accurate finishing, and proficiency in heading, and was named in the FIFA World XI twice.
+    
+    Torres started his career with Atlético Madrid, progressing through their youth system to the first-team squad. He made his first-team debut in 2001 and finished his time at the club with 75 goals in 174 La Liga appearances. Torres joined Premier League club Liverpool in 2007, after signing for a club record transfer fee. The most prolific goalscoring spell of his career, he became the fastest player in Liverpool history to score 50 league goals and was often regarded as one of the best strikers in the world.[6] In 2008, he finished third for both the Ballon d'Or and FIFA World Player of the Year.
+                            <br>
+                            <strong>HONOURS ( FA Cup (1) -
+                                Champions League (1) -
+                                Europa League (1) -
+                                Runner-up in the Club World Cup in 2012 -
+                                English Premier League (3))</strong>
+                        </div>
+    
+                             <img src="imgs/Fernando Torres.jpg" alt="Fernando Torres">
+                </p>
+    
+                </section>
+                
+           
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Sadio Mané </h1>
+                        <p>
+                            Sadio Mané (born 10 April 1992) is a Senegalese professional footballer who plays as a forward or winger for Saudi Pro League club Al Nassr and the Senegal national team. Widely regarded as one of the greatest African players of all time, he is known for his pressing, dribbling, and speed.[5][note 1]
+    
+                            Mané began his professional career with Ligue 2 club Metz at the age of 19, but he departed after a solitary season to join Austrian club Red Bull Salzburg in 2012 for a fee of €4 million, winning a league and cup domestic double in the 2013–14 season. Later that summer, Mané transferred to English club Southampton for a club record fee of £11.8 million. There, he set a new Premier League record for the fastest hat-trick, scored in 176 seconds in a 6–1 win over Aston Villa in 2015.
+    
+                            <br>
+                            <strong>HONOURS ( 
+                               English Premier League (1) -
+    League Cup (1) -
+    FA cup (1) -
+    Champions League (1) -
+    European Cup (1) -
+    clubs World Cup (1)
+                                )</strong>
+                        </div>
+    
+                             <img src="imgs/Sadio Mané.png" alt="Sadio Mané">
+                </p>
+    
+                </section>
+
+
+                <h1 class="p-relative">Real Madrid</h1>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>CRISTIANO RONALDO</h1>
+                        <p>Cristiano Ronaldo is a part of Real Madrid's legacy and will forever be remember as one of the great icons throughout the club's history.
+                            
+                            He was unveiled at the Santiago Bernabéu on 6 July 2009, where he was joined by Eusebio and Alfredo Di Stéfano, and since that day, the goals just kept coming.
+                            He netted 451 times in 438 competitive appearances with Real Madrid (averaging over a goal a game).
+                            He registered in all of the competitions he featured in: 312 in LaLiga, 105 in the Champions League, 22 in the Copa del Rey,
+                            six in the Club World Cup, four in the Spanish Super Cup and two in the UEFA Super Cup.
+    
+                            Nobody throughout the club's history has scored as many goals as the Portuguese attacker,
+                            who boasts an impressive trophy haul as a Real Madrid player: four Champions League crowns,
+                            three Club World Cups and UEFA Super Cups apiece, two LaLiga titles, a pair of Copas del Rey and two Spanish Super Cups. 
+                            This list of honours is completed with four Ballons d'Or, three Golden Shoe awards, two The Best awards,
+                             whilst he was named UEFA Best Player in Europe three times and landed the Pichichi crown on three occasions.
+                    <br>
+                    <strong>HONOURS (                    4 European Cups -
+                        3 Club World Cups -
+                        3 UEFA Super Cups -
+                        2 LaLiga titles -
+                        2 Copas del Rey -
+                        2 Spanish Super Cups )</strong>
+                            </div>
+    
+                             <img src="imgs/CRISTIANO RONALDO.png" alt="CRISTIANORONALDO">
+                </p>
+    
+                </section>
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>SERGIO RAMOS</h1>
+                        <p>
+                            A true madridista legend, Sergio Ramos is one of the greatest players in our club's history. 
+                            The hero of La Décima with his unforgettable 93rd-minute goal in Lisbon, he captained the team to lift La Duodécima and La Decimotercera.
+                            Four European Cups take pride of place in a trophy haul of 22 titles, including 4 Club World Cups, 3 European Super Cups,
+                            5 LaLiga titles, 2 Copas del Rey and 4 Spanish Super Cups. On the 8th of September 2005, at 19 years of age, 
+                            he was presented at the Santiago Bernabéu alongside Florentino Pérez and Alfredo Di Stéfano. Two days later, 
+                            he made his debut against Celta. From then on, over the course of 16 seasons with the team, he made 671 appearances,
+                            making him the club's fourth-highest all-time appearance maker. He also found the net an incredible 101 times,
+                            a truly amazing figure for a defender. Beyond his impressive numbers, he'll long hold a place in madridista hearts thanks to his big performances on historic nights.
+                            On an individual note, Ramos has been named in the FIFA FIFPro World 11, some 11 times (2008, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019 and 2020). He won the Golden Ball at the 2014 Club World Cup, he's been named the best defender in the Champions League twice (2017 and 2018), and was Man of the Match in the 2016 Champions League final and the European Sup Cup the same year.
+    <br>
+                            <strong>HONOURS (4 Champions Leagues -    4 Club World Cups -    3 European Super Cups -   5 LaLiga titles -    2 Copas del Rey -    4 Spanish Super Cups -    1 World Cup with Spain -    2 European Championships with Spain)</strong>
+                        </div>
+    
+                             <img src="imgs/SERGIO RAMOS.png" alt="SERGIO RAMOS">
+                </p>
+    
+                </section>
+                
+                
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>RAÚL GONZÁLEZ </h1>
+                        <p>
+                            A Real Madrid symbol. The eternal captain who represented Madrid’s values on the pitch. Raul was a forward with an almost infinite instinct. He was an example for everyone, putting in the maximum effort in every game, irrespective of the opponent. He would give it his all, having an insatiable appetite, something that was evident with each action. He was always alert for rebounds. An excellent role-model for anyone who has ever dreamt of being a footballer.
+    
+                            On 29 October 1994 Raúl lived his first great moment with the Whites’ shirt. The forward made his debut at La Romareda Stadium. A week later he played his first derby against Atlético Madrid at the Bernabéu. He scored his first goal with a spectacular left-foot shot from the edge of the area. It went into the top corner, and contributed to his team’s victory (4-2), who went on to win La Liga title that season.
+                             
+                            Acclaimed in Spain, he conquered Europe. He played his first Champions League game at the age of 18. On 20 May 1998 he was in the team that won the club’s Seventh European Cup title beating Juventus Turin in the final. He repeated the experience in May of 2000 and 2002, scoring in both finals. He is one of the few players to have earned 100 caps with the Spanish national team. 
+        <br>
+                            <strong>HONOURS ( 3 European Cup -
+                            2 Intercontinental Cup-
+                            1 European Super Cup-
+                            6 La Liga-
+                            4 Spanish Super Cup)</strong>
+                        </div>
+    
+                             <img src="imgs/RAÚL GONZÁLEZ.jpg" alt="RAÚL GONZÁLEZ">
+                </p>
+    
+                </section>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Karim Benzema </h1>
+                        <p>
+                            Karim Benzema has left his mark on Real Madrid. Over the course of his fourteen seasons in the first team, he has become one of the best players in our history and the star of a period full of success. His tally of 354 goals in 648 games places him second on the list of Real Madrid top scorers.
+    
+                            Since his arrival in 2009, Benzema has won 25 titles, equaling Marcelo as the most successful Real Madrid player in club history. His honors list includes 5 Champions Leagues, 5 Club World Cups, 4 European Super Cups, 4 LaLiga titles, 3 Copas del Rey and 4 Spanish Super Cups.
+                            
+                            Madridistas enjoyed his goals and his football, with a special mention for his fantastic 2021/22 season, in which he scored 44 goals and was the top scorer in the Champions League and LaLiga. Figures which, together with his key role on the road to the Decimocuarta, earned him the 2022 Ballon d'Or and the UEFA Player of the Year award.
+                            
+                            One of the goalscorers in the Final of the Decimotercera, Benzema has left an indelible mark with his quality and magic on the pitch. He also won the Nations League with the French national team in 2021.
+    
+                            <br>
+                            <strong>HONOURS ( 5 Champions Leagues -
+                                5 Club World Cups - 
+                                4 European Super Cups -
+                                4 League Cups -
+                                3 King's Cups -
+                                4 Spanish Super Cups)</strong>
+                        </div>
+    
+                             <img src="imgs/Karim Benzema.png" alt="Karim Benzema">
+                </p>
+    
+                </section>
+                
+           
+                <section class="players-card">
+                    <div class="text">
+                        <h1>ROBERTO CARLOS </h1>
+                        <p>
+                            His left foot was essential in Real Madrid’s conquest of more than ten titles. The Brazilian ace will always be remembered for his friendly nature, regularity, prodigious speed (he ran 100 metres in 10.9 seconds) and his tremendous power (his shots reached a speed of 140 km/h).
+    
+    His dream of being a footballer started to become a reality in 1986. Roberto Carlos joined União São João, where he matured as a footballer, excelling at all levels. In 1992, at the age of only 19, he was already an acclaimed footballer in his country. Palmeiras did not take long in signing him, and there he formed an unequalled left wing with Rivaldo, whom he would face many years later.
+    
+    After winning two league titles in Brazil he signed with Inter Milan in 1995, and a year later he transferred to Real Madrid. The integration of Roberto Carlos within the team was very successful. He played 11 seasons with the Whites, winning many major trophies, in particular three European Cup titles.
+    
+    In 2007 he left Madrid after contributing in another La Liga title. It would be the last contribution of one of the best left-footers to have ever graced the Santiago Bernabéu Stadium. He holds the Whites all-time record for most number of games by a foreigner.
+    
+                            <br>
+                            <strong>HONOURS ( 
+                                3 European Cup -
+                                2 Intercontinental Cup -
+                                1 European Super Cup -
+                                4 La Liga -
+                                3 Spanish Super Cup
+                                )</strong>
+                        </div>
+    
+                             <img src="imgs/ROBERTO CARLOS.png" alt="ROBERTO CARLOS">
+                </p>
+    
+                </section>
+           
+           
+                <h1 class="p-relative">Barcelona</h1>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Lionel Messi</h1>
+                        Honours with FC Barcelona <br>
+                        3 FIFA Club World Cups -
+                        4 UEFA Champions League - 
+                        3 UEFA Super Cups -
+                        10 Spanish leagues -  
+                        7 Copas del Rey -
+                        8 Spanish Super Cups -
+                        4 Catalan Cup -
+                        2 Catalan Supercup 
+                        <br> 
+                        Honours with Argentina <br>
+                        1 Olympic gold -
+                        1 Copa América 
+                        <br>
+                        Individual awards <br>
+                        1 Laureus -
+                        1 FIFA World Player -
+                        1 The Best FIFA Football Award -
+                        2 UEFA Player of the Year -
+                        1 World Soccer Award Best Player -
+                        6 Ballons d'Or -
+                        4 Golden XI -
+                        6 Golden Shoe -
+                        8 La Liga top scorer -
+                        6 Top scorer UEFA Champions League -
+                        9 MVP LaLiga -
+                        1 Golden Boy -
+                        1 Bravo Trophy 
+                        <br>
+                        Most important individual records <br>
+                        Only player to win Ballon d’Or, FIFA World Player, La Liga top scorer and Golden Shoe in same season (2009/10)
+                        Player with most Ballons d'Or 
+                        Player with most Golden Shoes
+                        Player with most Pichichi Trophies
+                        Top goalscorer in a season in official competition (73 goals in 2011/12)
+                        Top goalscorer in calendar year (91 goals in 2012)
+                        Top goalscorer at one club Club (672 goals)
+                        Longest scoring streak in La Liga (33 goals in 21 consecutive matches 2012/13)
+                        Player with most matches  for Argentina
+                        All time top goalscorer in La Liga (474 goals in 520 matches)
+                        Top goalscorer in a single La Liga season (50 goals in 2011/12)
+                        Player with most hat-tricks in La Liga (36)
+                        Player with most goals form a free kick in La Liga (39 goals)
+                        Player with most wins in official competition (542 wins in 771 matches)<br>
+                            </div>
+    
+                             <img src="imgs/FC-Barcelona-Lionel-Messi-PNG-Photo.png" alt="Lionel Messi">
+                </p>
+    
+                </section>
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Carles Puyol</h1>
+                        <p>Carles Puyol carried out his entire professional career at Barça but his beginnings were with his local side La Pobla de Segur. In his early years he showed great promise and in 1995 when he was 17 he joined the FC Barcelona youth system and moved into La Masia. He very quickly became a regular at the back for Barça B and on 2 October 1999 he made his long awaited debut for the first team.
+    
+                            Puyol had to wait until the season 2004/05 to win his first major trophy with the balugranes. He was the club captain and a key member of Frank Rijkaard’s side that claimed the league title that season, Puyol holding aloft the trophy in front of the Camp Nou crowd. Success continued as the following season with Barça retaining their league title and claiming the Champions League title in Paris. During Josep Guardiola’s time as coach Puyol continued to play a vital role in the Barça back four before injury finally caught up with him in his final two campaigns as a player. When he finally decided to hang up his boots, only Xavi Hernández had played more games for the Club in official competition.
+                            <br>
+                            <strong>HONOURS (2 World Club Cups -
+                                3 Champions League -
+                                2 European Super Cups -
+                                6 League trophies -
+                                2 Spanish Cups -
+                                6 Spanish Super Cups -
+                                6 Catalan Cups )</strong>
+                        </div>
+    
+                             <img src="imgs/carles-puyol-1.png" alt="Carles Puyol">
+                </p>
+    
+                </section>
+                
+                
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Andrés Iniesta </h1>
+                        <p>
+                            A creative midfielder of extraordinary footballing quality, Iniesta stood out for his pure talent and his intelligence. Small in stature and elusive, his incredible skills on the ball made him a vital part of the blaugrana system. It is not for nothing that he is considered one of the greatest Spanish players of all time.
+    
+                            Iniesta future as a player was forever linked to that glorious period in which Barça won trophy after trophy whilst at the same time dazzling the fans with the football they played under Frank Rijkaard, Pep Guardiola, Tito Vilanova, Luis Enrique and Ernesto Valverde. It was a remarkable time for the blaugranes with the calming presence of Iniesta in the midfield a vital part of that success. His last minute equaliser against Chelsea at Stamford Bridge that gave Barça a place in the 2009 Champions League final will forever form part of the Club’s history.
+                            
+                            He left the Club on a high having completed the league and Copa del Rey double in the 2017/18 season. In his time at Barça Andrés Iniesta claimed no less than 32 trophies as a blaugrana and the man from Fuentealbilla will always have a place in the heart of every Barça fan. As the former Spain national team coach Vicente del Bosque said, “Iniesta will always be an example of how to play and how to behave as a professional.”
+                            <br>
+                            <strong>HONOURS ( 
+                                3 World Club Cups -
+                                4 Champions League -
+                                3 European Super Cups -
+                                9 Leagues -
+                                6 Copas del Rey -
+                                7 Spanish Super Cups -
+                                5 Copas Catalunya -
+                                2 Catalan Super Cups)</strong>
+                        </div>
+    
+                             <img src="imgs/Andrés Iniesta.png" alt="Andrés Iniesta">
+                </p>
+    
+                </section>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Xavi Hernández </h1>
+                        <p>
+                            Xavi (Terrassa, Barcelona, 1980) is, statistically speaking, the most successful player in Spanish football history. A midfielder from the club’s youth system, he’s the perfect example of the Barça values. The conductor of the FC Barcelona orchestra reads the game to absolute perfection. He always seemed to pick out the best-positioned players and had an uncanny knack for creating time and space.
+    
+    His mentor was Pep Guardiola and he’ would go on to become the midfield general’s successor. Xavi was astonishingly creative and was the veritable brain in the Barça engine. Though not physically strong, he used his wily knowledge to outwit opponents time and time again. There was no safer guarantee in the middle of the park than this exquisite player.
+    
+    He made his first team debut in 1998 under Louis van Gaal, and held onto his first team place for a remarkable seventeen seasons. It was under Frank Rijkaard in 2003 that he really started making his name, and by the time he was playing under his role model Pep Guardiola in the 2008/09 season, his legend was already set in stone. in his final season as a blaugrana. following the retirement of Carles Puyol, he became Barça captain. 
+    
+    He left Barça in 2015 with full honours, having broken the club record for first team appearances and won more titles than any other Spaniard before him. Xavi will always be part of the FC Barcelona heritage.
+    
+                            <br>
+                            <strong>HONOURS ( 
+                                2 FIFA Club World Cups -
+                                4 Champions League -
+                                2 European Supercups -
+                                8 Leagues -
+                                3 Copas del Rey -
+                                6 Spanish Supercups -
+                                6 Copas Catalunya -
+                                1 Catalan Supercup )</strong>
+                        </div>
+    
+                             <img src="imgs/Xavi Hernández.jpg" alt="Xavi Hernández">
+                </p>
+    
+                </section>
+                
+           
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Daniel Alves  </h1>
+                        <p>
+                            After five successful seasons with Sevilla, Dani Alves came to FC Barcelona in the summer of 2008. His physical strength earned him the nickname The Tarantula in his native Brazil and he was soon the indisputable first choice at right back for the blaugranes. In his eight seasons in a Barça shirt he made 414 appearance, 391 of which came in official competition, for an average of 49 games a season. With his solidity in defence, his rampaging runs down the flank, and his potent shot from outside the box, he was a vital component for four different blaugrana coaches: Pep Guardiola, Tito Vilanova, Tata Martino and Luis Enrique. Furthermore, his commitment to the team and his extrovert personality made him a firm favourite with the Barça fans and one of the stars when it came to celebrating the team’s many successes.
+    
+                            In the summer of 2016, Dani Alves would finally leave the club. He would pass through Juventus, PSG and Sao Paulo before returning to wear Blaugrana in January 2022. At the age of 38, Alves returned to Barça to put himself under the orders of Xavi Hernández and be part of the good second half of the season of the culer team.
+                            
+                            At the time of his departure in the summer of 2022, Dani Alves was second on Barça's all-time appearance list for foreign players, behind none other than Leo Messi. Also, he is one of the players with the most trophies. Football fans will never forget his raids down the right hand side in tandem with Messi, wreaking havoc on opposing defences.
+                            
+                            
+                             
+                            <br>
+                            <strong>HONOURS ( 
+                                3 Club World Cups -
+                            3 Champions Leagues -
+                            3 European Super Cups -
+                            6 Leagues -
+                            4 Copas del Rey -
+                            4 Spanish Super Cups -
+                            2 Copas Catalunya -
+                            1 Catalan Super Cup )</strong>
+                        </div>
+    
+                             <img src="imgs/Daniel Alves.png" alt="Daniel Alves">
+                </p>
+    
+                </section>
+           
+                <h1 class="p-relative">Liverpool</h1>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Paolo Maldini</h1>
+                        <p>Paolo Cesare Maldini OMRI (Italian pronunciation: [ˈpaːolo malˈdiːni]; born 26 June 1968) is an Italian former professional footballer who played primarily as a left back and centre back for AC Milan and the Italy national team. He is widely regarded as one of the greatest defenders of all time. As the Milan and Italy captain for many years he was nicknamed "Il Capitano". Maldini held the record for most appearances in Serie A, with 647, until 2020, when he was overtaken by Gianluigi Buffon. He most recently served as technical director for Milan, as well as being co-owner of USL Championship club Miami FC.
+    
+                            Maldini spent all 25 seasons of his playing career in the Serie A with Milan, before retiring at the age of 41 in 2009. He won 26 trophies with Milan: the European Cup/UEFA Champions League five times, seven Serie A titles, one Coppa Italia, five Supercoppa Italiana titles, five European/UEFA Super Cups, two Intercontinental Cups and one FIFA Club World Cup. Maldini won the Best Defender trophy at the UEFA Club Football Awards at the age of 39, as well as the Serie A Defender of the Year Award in 2004. Following his retirement after the 2008–09 season, Milan retired his number 3 shirt.
+                            .<br>
+                    <strong>HONOURS (                   
+                        Champions League (5) -
+      Italian Leauge (7) -
+      European Super Cups (4) -
+    clubs World Cup (1) )</strong>
+                            </div>
+    
+                             <img src="imgs/maldini.png" alt="Paolo Maldini">
+                </p>
+    
+                </section>
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Alessandro Nesta</h1>
+                        <p>
+                            Alessandro Nesta Ufficiale OMRI (Italian pronunciation: [alesˈsandro ˈnɛsta]; born 19 March 1976) is an Italian professional football manager and former player who is currently manager of Serie B club Reggiana. Usually deployed as a centre-back, he is widely considered one of the best defenders of all time. He was best known for his pace, artistic tackles, elegance on the ball, distribution and tight marking of opponents.
+    
+    He made over 400 Serie A appearances in a 20-year career spread between Lazio and AC Milan, winning domestic and European honours with both clubs. Later in his career, he played in Major League Soccer (MLS) for the Montreal Impact, and for Chennaiyin of the Indian Super League. Nesta is a four-time Serie A Defender of the Year and a four-time member of the annual UEFA Team of the Year. In 2004, he was named as one of the Top 100 greatest living footballers as part of FIFA's 100th anniversary celebration. In 2021, he was inducted into the Italian Football Hall of Fame.<br>
+                            <strong>HONOURS (Italian League (1) -
+                                Italian Cup (2) -
+                                Italian Supercoppa (1) -
+                                Cup Winners' Cup (1) -
+                                European Super Cup (1) -
+                                Italian League (2) -
+                                Italian Cup (1) -
+                                Italian Supercoppa (2))</strong>
+                        </div>
+    
+                             <img src="imgs/Alessandro Nesta.jpeg" alt="Alessandro Nesta">
+                </p>
+    
+                </section>
+                
+                
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Andrea Pirlo  </h1>
+                        <p>
+                            Andrea Pirlo Ufficiale OMRI[4][5] (Italian pronunciation: [anˈdrɛːa ˈpirlo]; born 19 May 1979) is an Italian former professional football player who is the head coach of Serie B club Sampdoria.[6] Considered one of the greatest midfielders ever, Pirlo was renowned for his vision, ball control, technique, creativity, passing, and free kick ability.[7][8][9]
+    
+    Pirlo began his club career in 1995 as an attacking midfielder with hometown club Brescia, winning the Serie B in 1997. He signed for Serie A club Inter Milan a year later, but limited game time and loans away from the club saw him transfer to cross-city rivals AC Milan in 2001. There, Pirlo matured into a world-class player, and he then won two Serie A titles, two UEFA Champions Leagues, two UEFA Super Cups, a FIFA Club World Cup, a Coppa Italia, and a Supercoppa Italiana.[9] He departed for Juventus in 2011, where he won four consecutive Serie A titles, two Supercoppa Italiana titles, and another Coppa Italia. In 2015, Pirlo joined Major League Soccer (MLS) club New York City FC, where he played for two years before retiring in 2017.
+                            <br>
+                            <strong>HONOURS ( UEFA Champions League (2) -
+                                European Super Cup (2 ) -
+                                Club World Cup (1))</strong>
+                        </div>
+    
+                             <img src="imgs/Pirlo.png" alt="Andrea Pirlo ">
+                </p>
+    
+                </section>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Carlo Ancelotti</h1>
+                        <p>
+                            Carlo Ancelotti Cavaliere OMRI, Ufficiale OSI (born 10 June 1959) is an Italian professional football manager and former player who is the manager of Real Madrid. Nicknamed "Don Carlo", he is regarded as one of the greatest managers of all time. Ancelotti is the most decorated manager in UEFA Champions League history, having won the trophy a record four times as coach (twice with AC Milan and twice with Real Madrid). He is also the first and only one to have managed teams in five Champions League finals. As a player, he won the European Cup twice with AC Milan in 1989 and 1990, making him one of seven people to have won the European Cup or Champions League as both a player and a manager. Ancelotti is also the first and only manager ever to have won league titles in all of Europe's top five leagues. He has won the FIFA Club World Cup a joint-record three times, and is also the manager with the joint-most UEFA Super Cup triumphs, having won the trophy on four occasions, managing Milan and Real Madrid.
+                                                   <br>
+                            <strong>HONOURS ( Italian League (1) -
+                                Italian Cup (1) -
+                                Italian Super Cup (1) -
+                                UEFA Champions League (2) -
+                                Runner-up (1) -
+                                European Super Cup (1) -
+                                Club World Cup)</strong>
+                        </div>
+    
+                             <img src="imgs/Carlo Ancelotti.png" alt="Carlo Ancelotti">
+                </p>
+    
+                </section>
+                
+           
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Gattuso </h1>
+                        <p>
+                            Gennaro Ivan Gattuso Ufficiale OMRI (Italian pronunciation: [dʒenˈnaːro ɡatˈtuːzo]; born 9 January 1978) is an Italian professional football coach and former player, who last served as manager of La Liga club Valencia.
+    
+    As a player, he mainly played in the centre as a defensive midfielder, although he was also capable of playing on the wing. He initially played for Perugia, Salernitana, and Rangers, though he is mostly remembered for his time with AC Milan in Serie A, where he won the Champions League, in 2002–03 and 2006–07, the Coppa Italia in 2002–03, and also the Serie A title in 2003–04 and 2010–11. In addition to these titles, he won two Italian Supercups, two UEFA Supercups, and a FIFA Club World Cup. At international level, he played for the Italy national football team at the 2000 Summer Olympics, three FIFA World Cups, two UEFA European Championships, and the 2009 FIFA Confederations Cup.
+                            <br>
+                            <strong>HONOURS ( 
+                                Italian League (2) -
+                                Italian Cup (1) -
+                                Italian Super Cup (2) -
+                                UEFA Champions League (2) -
+                                European Super Cup (2) -
+                                Club World Cup (1)
+                                )</strong>
+                        </div>
+    
+                             <img src="imgs/Gattuso.png" alt="Gattuso">
+                </p>
+    
+                </section>
+           
+           
+                <h1 class="p-relative">Bayern München </h1>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Robert Lewandowski</h1>
+                        <p>Robert Lewandowski (Polish pronunciation: [ˈrɔbɛrt lɛvanˈdɔfskʲi]i; born 21 August 1988) is a Polish professional footballer who plays as a striker for La Liga club Barcelona and captains the Poland national team. Recognised for his positioning, technique and finishing, Lewandowski is regarded as one of the best strikers of all time, as well as one of the most successful players in Bundesliga and Bayern Munich history. He has scored over 600 senior career goals for club and country.
+    
+                            After being the top scorer in the third and second tiers of Polish football with Znicz Pruszków, Lewandowski moved to top-flight Lech Poznań, helping the team win the 2009–10 Ekstraklasa. In 2010, he transferred to Borussia Dortmund, where he won honors including two consecutive Bundesliga titles and the league's top goalscorer award. In 2013, he also featured with Dortmund in the 2013 UEFA Champions League Final. Prior to the start of the 2014–15 season, Lewandowski agreed to join Dortmund's domestic rivals, Bayern Munich, on a free transfer. 
+                            <br>
+                    <strong>HONOURS (   Bundesliga (8) -
+                        German Cup (3) -
+                        German Super Cup (5) -
+                        UEFA Champions League  (1) -
+                        European Super Cup (1) -
+                        Club World Cup (1)  )</strong>
+                            </div>
+    
+                             <img src="imgs/Robert Lewandowski.png" alt="Robert Lewandowski">
+                </p>
+    
+                </section>
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1> Philipp Lahm</h1>
+                        <p>
+                            Philipp Lahm (German pronunciation: [ˈfɪlɪp ˈlaːm]; born 11 November 1983) is a German former professional footballer who played as a full-back. Considered by many to be one of the greatest full-backs of all time, Lahm was the longtime captain of Bayern Munich, having led them to numerous honours including the 2013 UEFA Champions League as part of the Treble. He is also a former captain of his national team, which he led to win the 2014 FIFA World Cup, before retiring from international football.[2][7]
+    
+                            Lahm was included in the World Cup team of the tournament in 2006, 2010, and 2014, and the UEFA Team of the Tournament in 2008 and 2012 and in the UEFA Team of the Year 2006, 2008, 2012, 2013 and 2014.
+    <br>
+                            <strong>HONOURS (Bundesliga (8) -
+                                German Cup (6) -
+                                German Football League - Ligabokal (1) -
+                                German Super Cup (3) -
+                                UEFA Champions League (1) -
+                                European Super Cup (1) -
+                                Club World Cup (1) )</strong>
+                        </div>
+    
+                             <img src="imgs/Philipp Lahm.png" alt="Philipp Lahm">
+                </p>
+    
+                </section>
+                
+                
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Thomas Müller </h1>
+                        <p>
+                            Thomas Müller (German pronunciation: [ˈtoːmas ˈmʏlɐ]; born 13 September 1989) is a German professional footballer who plays for Bundesliga club Bayern Munich and the Germany national team. He has been deployed in a variety of attacking roles – as an attacking midfielder, second striker, centre forward, and on either wing.[4][5][6] He has been praised for his positioning, teamwork, stamina, and work-rate, and has shown consistency in both scoring and creating goals.[7]
+    
+                            A product of Bayern's youth system, Müller has represented the club ever since. With Bayern he has won a record twelve Bundesliga titles, six DFB-Pokals, eight DFL-Supercups, two UEFA Champions League titles, two UEFA Super Cups and two FIFA Club World Cups. He made his first-team breakthrough in the 2009–10 season after Louis van Gaal was appointed as the main coach; he played almost every game as the club won the league and cup double and reached the Champions League final. Müller scored 23 goals in the 2012–13 season as Bayern won a historic treble; the league title, cup and Champions League. He broke the Bundesliga record for assists by providing 21 in a season (a record in the top five leagues jointly held with Lionel Messi in La Liga) and scored 14 goals as Bayern won a second treble in the 2019–20 season.                        <br>
+                            <strong>HONOURS (Bundesliga (12) -
+                                German Cup (6) -
+                                German Super Cup (8) -
+                                UEFA Champions League (2) -
+                                European Super Cup: (2) -
+                                Club World Cup (2) ))</strong>
+                        </div>
+    
+                             <img src="imgs/Thomas Müller.png" alt="Thomas Müller ">
+                </p>
+    
+                </section>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Arjen Robben </h1>
+                        <p>
+                            Arjen Robben (Dutch pronunciation: [ˈɑrjən ˈrɔbə(n)]i; born 23 January 1984[citation needed]) is a Dutch former professional footballer who played as a winger. Known for his dribbling skills, speed, ball control and long-range shots, Robben is widely regarded as one of the greatest wingers and players of his generation.[4][5][6]
+    
+    Robben first came to prominence with Groningen, for whom he was player of the year for the 2000–01 Eredivisie season. Two years later he signed for PSV, where he became the Netherlands' Young Player of the Year and won an Eredivisie title.[7] The following season Robben's signature was pursued by leading clubs, and after protracted transfer negotiations, he joined Chelsea in 2004. Robben's Chelsea debut was delayed through injury, but upon returning to fitness, he helped Chelsea bring home two consecutive Premier League titles, and was the Premier League Player of the Month in November 2004. After a third season in England which was punctuated by injury, Robben signed for Real Madrid in a transfer worth €35 million.                        <br>
+                            <strong>HONOURS (German League (8) -
+                                German Cup (5) -
+                                German Super Cup (2) -
+                                UEFA Champions League (1) -
+                                European Super Cup (1) )</strong>
+                        </div>
+    
+                             <img src="imgs/Arjen Robben.png" alt="Arjen Robben">
+                </p>
+    
+                </section>
+                
+           
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Franck Ribéry </h1>
+                        <p>
+                            Franck Henry Pierre Ribéry (French pronunciation: ​[fʁɑ̃k ʁibeʁi]; born 7 April 1983) is a French former professional footballer who primarily played as a winger, preferably on the left side, and was known for his pace, energy, skill, and precise passing.[2] Ribéry has been described as a player who is fast, tricky and an excellent dribbler, who has great control with the ball at his feet.[3] While with Bayern, he was recognised on the world stage as one of the best players of his generation. The previous talisman of the French national team, Zinedine Zidane, once referred to Ribéry as the "jewel of French football".[4]
+    
+    Ribéry's career began in 1989 as a youth player for local hometown club FC Conti Boulogne. He left the club after seven years to join professional outfit Lille, but departed the club after three years after having difficulties adjusting. In 1999, Ribéry joined US Boulogne, where he played for two years. After spending two more years in the amateur divisions with two clubs (Alès and Brest), Ribéry earned a move to Ligue 1 club Metz in 2004. After six months with the club, Ribéry moved to Turkey in January 2005 to join Galatasaray, where he won the Turkish Cup. 
+                            <br>
+                            <strong>HONOURS ( Bundesliga (9) -
+                                German Cup (6) -
+                                German League - Ligabokal (1) -
+                                German Super Cup (4) -
+                                UEFA Champions League (1) -
+                                European Super Cup (1) -
+                                Club World Cup (1) 
+                                )</strong>
+                        </div>
+    
+                             <img src="imgs/Franck Ribéry.png" alt="Franck Ribéry">
+                </p>
+    
+                </section>
+                <h1 class="p-relative">PSG</h1>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Zlatan Ibrahimović</h1>
+                        <p>Zlatan Ibrahimović (Swedish pronunciation: [ˈslǎːtan ɪbraˈhǐːmʊvɪtɕ], Bosnian pronunciation: [zlǎtan ibraxǐːmoʋitɕ]; born 3 October 1981) is a Swedish former professional footballer who played as a striker. Ibrahimović is renowned for his acrobatic strikes and volleys, powerful long-range shots, and excellent technique and ball control. He is regarded as one of the greatest strikers of all time and is one of the most decorated footballers in the world, having won 34 trophies in his career. He has scored over 570 career goals, including more than 500 club goals, and has scored in each of the last four decades.                        .<br>
+                    <strong>HONOURS (                   
+                        French League (4) -
+    French Cup (2) -
+    French League Cup (3) -
+    Champions Cup (1) )</strong>
+                            </div>
+    
+                             <img src="imgs/Zlatan Ibrahimović.png" alt="Zlatan Ibrahimović">
+                </p>
+    
+                </section>
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Thiago Silva</h1>
+                        <p>
+                            Thiago Emiliano da Silva (born 22 September 1984) is a Brazilian professional footballer who plays as a centre-back for Premier League club Chelsea and the Brazil national team. Widely regarded as one of the best defenders of his generation, he is known for his defensive prowess, discipline, and leadership.
+    
+    Silva began his senior club career in 2002 playing as a midfielder for RS Futebol, and transitioned to a defensive position while at Juventude; he then signed with Porto in 2004, at age 19, and moved to Dynamo Moscow on loan, where he was hospitalized with a near fatal bout of tuberculosis. After recovering, he joined Fluminense and won a Copa do Brasil. In 2009, Silva moved to AC Milan for a reported fee of €8 million and won a Serie A title.                        <strong>HONOURS (Italian League (1) -
+        <strong>HONOURS (                   
+        French League 1 (7) -
+        French Cup (5) -
+        League Cup (5) -
+        Champions Cup (5) -
+        UEFA Champions League runner-up (1))</strong>
+                        </div>
+    
+                             <img src="imgs/Thiago Silva.png" alt="Thiago Silva">
+                </p>
+    
+                </section>
+                
+                
+    
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Kylian Mbappé  </h1>
+                        <p>
+                            Kylian Mbappé Lottin (born 20 December 1998) is a French professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the France national team. Regarded as one of the best players in the world, he is renowned for his dribbling abilities, exceptional speed, and finishing.
+    
+                            Born in Paris and raised in nearby Bondy, Mbappé began his senior club career in 2015 with Monaco, where he won the Ligue 1 title in the 2016–17 season. In 2017, aged 18, Mbappé signed for Paris Saint-Germain on an eventual permanent transfer worth €180 million, making him the second-most-expensive player and most expensive teenage player of all time.[4] With PSG, he has won five Ligue 1 titles and three Coupes de France, including a domestic quadruple in the 2019–20 season, while also leading the club to its first ever UEFA Champions League final in 2020. He is the club's all-time top goalscorer and ranks third of all time in assists.  
+                             <br>
+                            <strong>HONOURS (French League 1 (5) -
+                                French Cup (3) -
+                                Runner-up (1) -
+                                French League Cup (2) -
+                                Champions Cup (2) -
+                                UEFA Champions League Runner-up (1))</strong>
+                        </div>
+    
+                             <img src="imgs/Kylian Mbappé.png" alt="Kylian Mbappé ">
+                </p>
+    
+                </section>
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Edinson Cavani</h1>
+                        <p>
+                            Edinson Roberto Cavani Gómez (Spanish pronunciation: [ˈeðinsoŋ kaˈβani]; born 14 February 1987) is an Uruguayan professional footballer who plays as a striker for Argentine Primera División club Boca Juniors and the Uruguay national team. He is nicknamed El Matador ("The Killer") or Cazador ("Hunter") for his clinical finishing as well as his celebration, in which he makes a gesture resembling a bow and arrow. Cavani is considered one of the best strikers of his generation and one of Uruguay's greatest players.
+    
+                            Cavani began his career playing for Danubio in Montevideo, where he played for two years, before moving to Italian side Palermo in 2007. In 2010, Cavani signed for Napoli, who signed him on an initial loan deal before buying him for a total fee of €17 million. He helped them win the Coppa Italia in 2012 and established himself as the most dominant striker in Serie A.[4] In mid-2013, Cavani joined Paris Saint-Germain in France for a reported €64 million, at the time the most expensive signing in French football history. With PSG, Cavani won six Ligue 1 titles, five Coupes de la Ligue and four Coupes de France.                                               <br>
+                            <strong>HONOURS (French League (6) -
+                                French Cup (5) -
+                                League Cup (5) -
+                                Champions Cup (4) -
+                                UEFA Champions League Runner-up (1) )</strong>
+                        </div>
+    
+                             <img src="imgs/Edinson Cavani.png" alt="Edinson Cavani">
+                </p>
+    
+                </section>
+                
+           
+                <section class="players-card">
+                    <div class="text">
+                        <h1>Ronaldinho </h1>
+                        <p>
+                            Ronaldo de Assis Moreira (born 21 March 1980), commonly known as Ronaldinho Gaúcho (Brazilian Portuguese: [ʁonawˈdʒĩɲu ɡaˈuʃu]) or simply Ronaldinho,[note 1] is a Brazilian retired professional footballer who played mostly as an attacking midfielder, but was also deployed as a winger. Widely regarded as one of the greatest players of all time, he won two FIFA World Player of the Year awards and a Ballon d'Or. He is the only player ever to have won a World Cup, a Copa América, a Confederations Cup, a Champions League, a Copa Libertadores and a Ballon d'Or.[4] A global icon of the sport, Ronaldinho was renowned for his technical skills, creativity, dribbling ability and accuracy from free-kicks, his use of tricks, feints, no-look passes and overhead kicks, as well as his ability to score and create goals, all prominent characteristics of his early-age background playing futsal. He is known by the nickname "O Bruxo" ("The Wizard")
+                                                   <br>
+                            <strong>HONOURS ( 
+                                UEFA Intertoto Cup (1)
+                                )</strong>
+                        </div>
+    
+                             <img src="imgs/Ronaldinho.png" alt="Ronaldinho">
+                </p>
+    
+                </section>
+                   
+           
+               
+            </div>
+       
+       
+       
+       
+       
+       
+       
+            <footer class="footer">
+                <p class="footer-title" >Copyrights @ <span>Football History </span> </p>
+        </footer>
+       
+       
+        </div>
+
+
+        
+            
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
